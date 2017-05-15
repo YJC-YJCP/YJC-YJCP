@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/symbol_mark" />
+
+    <!--상단 탭-->
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/car_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등교" />
+
+        <Button
+            android:id="@+id/car_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하교" />
+    </LinearLayout>
+
+    <!--툴바-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true" />
+
+    <!--그어진 회색 선-->
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#c9c9c9"
+        android:id="@+id/view"/>
+
+    <!--체크 박스-->
+    <RelativeLayout
+        android:id="@+id/checkboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <CheckBox
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월" />
+        <CheckBox
+            android:id="@+id/tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mon"
+            android:text="화" />
+        <CheckBox
+            android:id="@+id/wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tue"
+            android:text="수" />
+        <CheckBox
+            android:id="@+id/thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wed"
+            android:text="목" />
+        <CheckBox
+            android:id="@+id/fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thu"
+            android:text="금" />
+    </RelativeLayout>
+
+    <!--그어진 회색 선-->
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/checkboxLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#c9c9c9"
+        android:id="@+id/view2"/>
+
+
+    <!--스크롤뷰-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view2">
+        <!--스크롤뷰의 자식(1개만 존재가능)-->
+        <RelativeLayout
+            android:id="@+id/slaveScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--출발지 목적지 검색 레이아웃-->
+                <LinearLayout
+                    android:id="@+id/tbblay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/routing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/addRouteLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/sourceSearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="출발지"
+                                android:focusable="false"
+                                android:onClick="sourceClick" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/destinationLocition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/sourceSearch"
+                            android:editable="false"
+                            android:text="영진전문대학" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="2">
+
+                        <Button
+                            android:id="@+id/transferLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableTop="@drawable/plus"
+                            android:onClick="transferAddClick"
+                            android:text="경유지추가" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--티맵 띄우는곳-->
+                <RelativeLayout
+                    android:id="@+id/uploadMainTmap"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/tbblay">
+                </RelativeLayout>
+                <!--등록 버튼-->
+                <Button
+                    android:id="@+id/success"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:onClick="successButtonClicked"
+                    android:layout_below="@+id/uploadMainTmap"
+                    android:text="등록완료" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
