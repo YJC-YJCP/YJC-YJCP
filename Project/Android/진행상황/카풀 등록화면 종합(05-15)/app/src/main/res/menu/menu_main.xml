@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_main"
+        android:icon="@drawable/menu_button"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/one"
+                android:title="내정보" />
+            <item
+                android:id="@+id/two"
+                android:title="시간표" />
+            <item
+                android:id="@+id/three"
+                android:title="PUSH 설정" />
+            <item
+                android:id="@+id/four"
+                android:title="메시지 목록" />
+            <item
+                android:id="@+id/five"
+                android:title="고객센터" />
+            <item
+                android:id="@+id/six"
+                android:title="로그아웃" />
+        </menu>
+    </item>
+</menu>
