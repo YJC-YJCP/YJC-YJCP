@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/timeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--android:background="#ff777777"-->
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:text="등교"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:text="하교"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/GTS_Monday_button"
+                android:onClick="GTS_Monday_click"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="월"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <EditText
+                android:id="@+id/GTS_Monday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/GTH_Monday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+            <Button
+                android:id="@+id/mon_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:text="X"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/GTS_Tuesday_button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="화"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <EditText
+                android:id="@+id/GTS_Tuesday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/GTH_Tuesday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:id="@+id/tuse_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:text="X"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/GTS_Wendnesday_button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="수"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <EditText
+                android:id="@+id/GTS_Wednesday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/GTH_Wednesday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/wend_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:text="X"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/GTS_Thursday_button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="목"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <EditText
+                android:id="@+id/GTS_Thursday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/GTH_Thursday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/thurs_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:text="X"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/GTS_Friday_button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="금"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"/>
+
+            <EditText
+                android:id="@+id/GTS_Friday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/GTH_Friday_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:focusable="false"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/fri_x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:text="X"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/Store_time_button"
+            android:onClick="Store_btn_click"
+            android:text="저장"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff222222"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
