@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_location"
+        android:hint="검색할 위치를 입력하세요"
+        android:background="@drawable/rounded"
+        android:cursorVisible="true"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="0.5"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_search_button"
+        android:text="검색"
+        android:layout_toRightOf="@+id/search_location"
+        android:layout_weight="2"
+        />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/tmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_below="@+id/top">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/up"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="▲"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/km"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/up"
+            android:text="1km"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/down"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/km"
+            android:text="▼"/>
+        <Button
+            android:id="@+id/start_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="카풀탐색"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

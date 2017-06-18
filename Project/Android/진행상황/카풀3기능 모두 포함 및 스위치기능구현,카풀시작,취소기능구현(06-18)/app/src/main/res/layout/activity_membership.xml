@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.040"
+            android:src="@drawable/hodol"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:text="YJCP"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.040"
+            android:src="@drawable/hosun"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/inputID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="PASSWORD"
+            android:textSize="20dp"
+            android:layout_weight="0.40"/>
+
+        <EditText
+            android:id="@+id/inputPW"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="이름"
+            android:textSize="20dp"
+            android:layout_weight="0.40"/>
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="학번"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/inputDEPART"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:text="조회"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="계열/학과"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/inputClass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="성별"
+            android:textSize="10dp" />
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="0.40"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                android:text="남자"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/inputMan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:text="여자"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/inputGirl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="차소유"
+            android:textSize="10dp" />
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="0.40"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                android:text="유"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/Car_possession_true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:text="무"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <RadioButton
+                android:id="@+id/Car_possession_false"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                />
+        </RadioGroup>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="차량넘버"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Car_number_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="86dp"
+            android:layout_weight="0.20"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="차종"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Car_model_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="86dp"
+            android:layout_weight="0.20"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:text="차색상"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Car_color_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"></EditText>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="86dp"
+            android:layout_weight="0.20"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            />
+
+        <Button
+            android:id="@+id/Mem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:gravity="center"
+            android:onClick="buttonOnClick"
+            android:text="확인"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="0dp"
+            android:text="취소"
+            android:layout_height="match_parent"
+            android:layout_weight="0.40"
+            android:textSize="20dp"
+            >
+        </Button>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

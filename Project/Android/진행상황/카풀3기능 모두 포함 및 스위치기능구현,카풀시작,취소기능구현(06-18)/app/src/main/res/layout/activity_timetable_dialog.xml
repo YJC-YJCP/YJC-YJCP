@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/layout"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="등교"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/AM_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="하교"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/PM_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:id="@+id/Check_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="확인" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="취소" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

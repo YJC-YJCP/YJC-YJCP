@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/border"
+    tools:context="example.com.a0521_markerclickevent.list_layout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="수락한 탑승자들"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="대기중인 탑승자들"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/list_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
