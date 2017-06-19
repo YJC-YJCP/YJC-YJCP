@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.seeth.car">
+
+    <!-- 티맵 퍼미션 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uissionser-perm android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- GPS 퍼미션 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".membership" />
+        <activity android:name=".choice" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CarpoolUploadMain" />
+        <activity android:name=".CarpoolLocationSearch" />
+        <activity android:name=".CarpoolAreaMain" />
+        <activity android:name=".passenger_main" />
+        <activity android:name=".driver_start" />
+        <activity
+            android:name="layout.hei.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/symbol_mark" />
+
+    <!--상단 탭-->
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/goSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등교" />
+
+        <Button
+            android:id="@+id/goHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="하교" />
+    </LinearLayout>
+    <!--그어진 회색 선-->
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#c9c9c9"
+        android:id="@+id/view"/>
+
+    <RelativeLayout
+        android:id="@+id/mapSearchTMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/view">
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/locationSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#AA1212"
+        android:text="경로 등록"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>

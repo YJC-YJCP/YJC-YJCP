@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카풀이 시작되면 현재 드라이버위치가 자동차 마크로 나타납니다. 탑승시 탑승완료 버튼을 눌러주세요."
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/select_text"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:id="@+id/progress_ok"/>
+</LinearLayout>
